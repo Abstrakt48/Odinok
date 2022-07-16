@@ -134,14 +134,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mortem\engine\sys.cpp" />
+    <ClCompile Include="mortem\game\gm_main.cpp" />
     <ClCompile Include="mortem\launcher\launcher.cpp" />
     <ClCompile Include="mortem\launcher\win\winApplication.cpp" />
     <ClCompile Include="mortem\launcher\linux\linuxApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="mortem\engine\mortemdef.h" />
     <ClInclude Include="mortem\engine\sys.h" />
+    <ClInclude Include="mortem\engine\types.h" />
+    <ClInclude Include="mortem\game\gm_local.h" />
     <ClInclude Include="mortem\launcher\win\winApplication.h" />
     <ClInclude Include="mortem\launcher\linux\linuxApplication.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="misc\credits.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

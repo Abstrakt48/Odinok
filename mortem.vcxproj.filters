@@ -27,6 +27,9 @@
     <ClCompile Include="mortem\engine\sys.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mortem\game\gm_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mortem\launcher\win\winApplication.h">
@@ -38,5 +41,17 @@
     <ClInclude Include="mortem\engine\sys.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mortem\game\gm_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mortem\engine\mortemdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mortem\engine\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="misc\credits.txt" />
   </ItemGroup>
 </Project>

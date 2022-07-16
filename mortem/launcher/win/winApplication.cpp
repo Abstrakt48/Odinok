@@ -1,5 +1,6 @@
 #include "winApplication.h"
 #include "engine/sys.h"
+#include "game/gm_local.h"
 
 CWinApplication::CWinApplication(const char* cmdline)
 {
@@ -24,9 +25,9 @@ int CWinApplication::Run()
 	}
 
 	Sys_Printf("Working\n");
-	Sys_Printf("Writing to file...\n");
+	Sys_Printf("Attempting to boot game...\n");
 
-	return EXIT_SUCCESS;
+	GM_MortemMain();
 
 	Shutdown();
 };
@@ -34,8 +35,13 @@ int CWinApplication::Run()
 void CWinApplication::Init()
 {
 	Sys_Printf("Initializing...\n");
-	// code to be initialized goes here
-	Sys_Printf("winApplication initialized\n");
+
+	GM_MortemInit();
+
+	if (isGameInit)
+		Sys_Printf("winApplication initialized\n");
+	else
+		Sys_Error("isGameInit set to mFalse or NULL\n");
 
 	mPostInit = true;
 };
