@@ -1,14 +1,13 @@
 #include "sys.h"
+#include "common/cm_public.h"
 
 #include <stdio.h>
 #include <cstdarg>
+#include <cstring>
+#include <stdlib.h>
 
 #ifdef _WIN32
 #include <Windows.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <io.h>
 #elif __linux__
 #include <unistd.h>
 #endif
@@ -34,14 +33,11 @@ void Sys_Printf(const char* fmt, ...)
 	byte* p;
 
 	va_start(argptr, fmt);
-	vsprintf_s(text, fmt, argptr);
+	vsprintf(text, fmt, argptr);
 	va_end(argptr);
 
 	if (strlen(text) > sizeof(text))
 		Sys_Error("memory overwrite in Sys_Printf\n");
-
-	if (nostdout)
-		return;
 
 	for (p = (byte*)text; *p; p++)
 	{
@@ -75,7 +71,7 @@ void Sys_Error(const char* error, ...)
 	char string[1024];
 
 	va_start(argptr, error);
-	vsprintf_s(string, error, argptr);
+	vsprintf(string, error, argptr);
 	va_end(argptr);
 	Sys_Printf("Sys_Error: %s", string);
 

@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 #else
 	// for cases where it runs on linux (windows code will be worked on, then 
 	// linux code after)
-	CLinuxApplication app();
+	CLinuxApplication app(argc, argv);
 #endif
 
 	return app.Run();

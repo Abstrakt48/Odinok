@@ -1,6 +1,9 @@
 #include "winApplication.h"
 #include "engine/sys.h"
 #include "game/gm_local.h"
+#include "common/cm_public.h"
+
+extern mBoolean isGameInit;
 
 CWinApplication::CWinApplication(const char* cmdline)
 {
@@ -37,17 +40,12 @@ void CWinApplication::Init()
 	Sys_Printf("Initializing...\n");
 
 	GM_MortemInit();
-
-	if (isGameInit)
-		Sys_Printf("winApplication initialized\n");
-	else
-		Sys_Error("isGameInit set to mFalse or NULL\n");
+	Sys_Printf("winApplication initialized\n");
 
 	mPostInit = true;
 };
 
-int CWinApplication::Shutdown()
+void CWinApplication::Shutdown()
 {
 	Sys_Exit(et_normal);
-	return EXIT_SUCCESS;
 };

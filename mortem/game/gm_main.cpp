@@ -1,17 +1,18 @@
 #include "gm_local.h"
 #include "engine/sys.h"
-#include "mortemdef.h"
-#include "types.h"
+#include "engine/mortemdef.h"
+#include "common/cm_public.h"
 
 #include <stdlib.h>
 
 int GM_MortemInit(void)
 {
-	isGameInit = mTrue;
-	return EXIT_SUCCESS;
+	// init code here
+	return Success;
 };
 
 void GM_MortemMain(void)
 {
-	Sys_Printf("\n******************** %s %d.%d ********************\n", GAME, VERSION, VERSION_SMALL);
+	Sys_Printf("\n******************** %s %s ********************\n", GAME, VERSION);
+	Sys_Exit(et_normal);
 };

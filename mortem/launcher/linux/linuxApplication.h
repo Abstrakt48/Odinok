@@ -4,9 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// do this once on linux machine
-#define LINUX_BASE_DIR ""
-
 class CLinuxApplication
 {
 public:
@@ -16,7 +13,7 @@ public:
 	int Run();
 
 	void Init();
-	int Shutdown();
+	void Shutdown();
 private:
 	bool mPostInit = false;
 };

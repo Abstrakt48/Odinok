@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define WIN_BASE_DIR "C:/Users/james/Documents/programming/c++/mortem/"
-
 class CWinApplication
 {
 public:
@@ -15,7 +13,7 @@ public:
 	int Run();
 
 	void Init();
-	int Shutdown();
+	void Shutdown();
 private:
 	bool mPostInit = false;
 protected:
