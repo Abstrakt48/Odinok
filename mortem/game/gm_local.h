@@ -3,9 +3,9 @@
 #include "mathlib/mathlib.h"
 #include "common/cm_public.h"
 
-typedef struct entvars_s entvars_t;
 
-struct entvars_t 
+
+typedef struct entvars_s
 {
 	int			entityindex;			// entity index
 
@@ -50,16 +50,16 @@ struct entvars_t
 	vec3_t		movedir;
 
 	int			nextthink;
-	void		(*think)(gentity_t *self);
-	void		(*use)(gentity_t *self, gentity_t *other, gentity_t *activator);
-	void		(*pain)(gentity_t *self, gentity_t *attacker, int damage);
-	void		(*die)(gentity_t *self, gentity_t *inflictor, string_t *message);
+	void		(*think)(entvars_s *pev);
+	void		(*use)(entvars_s *pev, entvars_s *pevOther, entvars_s *pevActivator);
+	void		(*pain)(entvars_s *pev, entvars_s *pevAttacker, int damage);
+	void		(*die)(entvars_s *pev, entvars_s *pevInflictor, string_t *message);
 
 	int			health;
 
-	mBooleab	takedamage;
+	mBoolean	takedamage;
 	int			damage;
-};
+} entvars_t;
 
 // Game initialization method
 int GM_MortemInit( void );

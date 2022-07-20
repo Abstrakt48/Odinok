@@ -12,9 +12,9 @@ typedef unsigned short word;
 enum rotateAxis
 {
 	// roll pitch yaw (x y z)
-	RA_ROLL,
-	RA_PITCH,
-	RA_YAW,
+	ra_roll,
+	ra_pitch,
+	ra_yaw,
 };
 
 // For exiting, 1 causes fail, 0 runs smoothly
