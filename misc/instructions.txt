@@ -1,0 +1,13 @@
+To successfully download this and be able to run it
+
+On Windows:
+You need the latest installation of Visual Studio 2022
+Load the .sln solution file into VS
+Build and then run file
+
+On Linux:
+Install the linker libraries lGL, lGLU, and lglfw3
+Create a directory in the base dir called "build"
+Load up terminal
+Navigate to the base dir
+Run the "make" command, and it will automatically build and run

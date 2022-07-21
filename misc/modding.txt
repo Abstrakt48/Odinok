@@ -1,0 +1,21 @@
+Honestly, do whatever you want, just uh, dont sell it.
+Anyway, heres a modding... tutorial?
+
+Basically, dont fuck with the launcher files
+Feel free to do whatever you want to the game files though (good fun to be had)
+
+-----------------------------------
+			MODDING
+-----------------------------------
+Basic types:
+Most of the publicly used types are located in "mortem/common/cm_public.h"
+
+mBoolean - assigned a value of mTrue or mFalse, a boolean redef
+string_t - a string type for names and file locations
+byte - an interger with a really small max value (255)
+word - same as byte but with a larger max value (65,535)
+
+Math types:
+vec_t - a redefine of floats used for vectors
+vec2/3/4_t - a variable holding 2/3/4 values, used for coordinates and (maybe)
+			 parameters

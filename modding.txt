@@ -1,6 +1,0 @@
-FOLDERS:
-engine - engine functions and defines
-game - game code
-launcher - starts the game up (DO NOT CHANGE)
-common - common things shared and used across files
-mathlib - custom math library

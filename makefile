@@ -10,7 +10,8 @@ SRC_DIRS=\
 mortem/engine/*.cpp \
 mortem/game/*.cpp \
 mortem/launcher/*.cpp \
-mortem/launcher/linux/*.cpp
+mortem/launcher/linux/*.cpp \
+mortem/common/*.cpp
 
 INCLUDE_DIRS=mortem/
 
