@@ -7,7 +7,7 @@ Feel free to do whatever you want to the game files though (good fun to be had)
 -----------------------------------
 			MODDING
 -----------------------------------
-Basic types:
+BASIC TYPES:
 Most of the publicly used types are located in "mortem/common/cm_public.h"
 
 mBoolean - assigned a value of mTrue or mFalse, a boolean redef
@@ -15,7 +15,13 @@ string_t - a string type for names and file locations
 byte - an interger with a really small max value (255)
 word - same as byte but with a larger max value (65,535)
 
-Math types:
+MATH TYPES:
 vec_t - a redefine of floats used for vectors
 vec2/3/4_t - a variable holding 2/3/4 values, used for coordinates and (maybe)
 			 parameters
+
+ENTITIES:
+To create an entity, create a class with a header and cpp file. The class 
+should inherit the CBaseEntity class in game/cbase.h. Depending on the type of 
+entity, make sure to override the nesecarry functions to make the entity
+function properly. e.g void Spawn() override;
