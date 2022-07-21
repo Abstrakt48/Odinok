@@ -1,16 +1,15 @@
 #pragma once
 
 #include "mathlib/mathlib.h"
+#include "mathlib/vector.h"
 #include "common/cm_public.h"
-
-
 
 typedef struct entvars_s
 {
 	int			entityindex;			// entity index
 
-	vec3_t		origin;
-	vec3_t		angles;
+	Vector		origin;
+	Vector		angles;
 
 	int			modelindex;
 	int			frame;
@@ -24,15 +23,15 @@ typedef struct entvars_s
 	int			powerups;				// bit flags
 	int			weapon;					// determines weapon and flash model, etc
 
-	vec3_t		mins, maxs;
+	Vector		mins, maxs;
 	int			contents;				// CONTENTS_TRIGGER, CONTENTS_SOLID, CONTENTS_BODY, etc
 										// a non-solid entity should set to 0
 
-	vec3_t		absmin, absmax;			// derived from mins/maxs and origin + rotation
+	Vector		absmin, absmax;			// derived from mins/maxs and origin + rotation
 
 	// currentorigin will be used for all collision detection
-	vec3_t		currentorigin;
-	vec3_t		currentangles;
+	Vector		currentorigin;
+	Vector		currentangles;
 
 	string_t	*classname;
 	int			spawnflags;
@@ -47,7 +46,7 @@ typedef struct entvars_s
 	string_t	*message;				// messages for deaths & others
 
 	float		speed;
-	vec3_t		movedir;
+	Vector		movedir;
 
 	int			nextthink;
 	void		(*think)(entvars_s *pev);

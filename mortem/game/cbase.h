@@ -3,6 +3,10 @@
 #include "gm_local.h"
 #include "gm_funcs.h"
 
+class CBaseEntity;
+class CBaseMonster;
+class CBasePlayerItem;
+
 class CBaseEntity
 {
 public:

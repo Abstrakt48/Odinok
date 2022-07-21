@@ -24,7 +24,7 @@ int CWinApplication::Run()
 	if (!mPostInit)
 	{
 		Sys_Error("mPostInit not set to true\n");
-		return EXIT_FAILURE;
+		return Failure;
 	}
 
 	Sys_Printf("Working\n");
@@ -33,6 +33,9 @@ int CWinApplication::Run()
 	GM_MortemMain();
 
 	Shutdown();
+
+	// for clarity sake
+	return Success;
 };
 
 void CWinApplication::Init()

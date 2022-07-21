@@ -5,8 +5,6 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mortem", "mortem.vcxproj", "{9E062FD5-97DC-4A2D-8940-31A0C0A26F11}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mortemGame", "..\mortemGame\mortemGame.vcxproj", "{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,14 +21,6 @@ Global
 		{9E062FD5-97DC-4A2D-8940-31A0C0A26F11}.Release|x64.Build.0 = Release|x64
 		{9E062FD5-97DC-4A2D-8940-31A0C0A26F11}.Release|x86.ActiveCfg = Release|Win32
 		{9E062FD5-97DC-4A2D-8940-31A0C0A26F11}.Release|x86.Build.0 = Release|Win32
-		{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}.Debug|x64.ActiveCfg = Debug|x64
-		{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}.Debug|x64.Build.0 = Debug|x64
-		{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}.Debug|x86.ActiveCfg = Debug|Win32
-		{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}.Debug|x86.Build.0 = Debug|Win32
-		{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}.Release|x64.ActiveCfg = Release|x64
-		{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}.Release|x64.Build.0 = Release|x64
-		{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}.Release|x86.ActiveCfg = Release|Win32
-		{EFE68B5C-EC00-4A8F-A5AC-3FDCBFBAC634}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
