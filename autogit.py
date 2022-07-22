@@ -5,7 +5,7 @@ import os
 def main():
 	print("****** AUTOGIT ******\n")
 
-	be_lazy = input("wanna be lazy?\n0 - no\n1 - yeah\n->")
+	be_lazy = int(input("wanna be lazy?\n0 - no\n1 - yeah\n->"))
 
 	if be_lazy == 0:
 		os.system("git add -A")
