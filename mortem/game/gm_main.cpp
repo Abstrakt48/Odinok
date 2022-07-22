@@ -2,7 +2,6 @@
 #include "engine/sys.h"
 #include "engine/mortemdef.h"
 #include "common/cm_public.h"
-#include "gm_funcs.h"
 
 #include <stdlib.h>
 

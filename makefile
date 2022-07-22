@@ -3,7 +3,7 @@
 all: build_game run_game
 
 CC = g++
-CFLAGS = -Wall -Wextra -ggdb -O3
+CFLAGS = -ggdb -O3
 LIBS = -lm -lGL -lGLU -lglfw
 
 SRC_DIRS=\
@@ -11,7 +11,8 @@ mortem/engine/*.cpp \
 mortem/game/*.cpp \
 mortem/launcher/*.cpp \
 mortem/launcher/linux/*.cpp \
-mortem/common/*.cpp
+mortem/common/*.cpp \
+mortem/mathlib/*.cpp
 
 INCLUDE_DIRS=mortem/
 
