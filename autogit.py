@@ -1,6 +1,6 @@
 import os
 
-# automatically pushes to github (but you must provide commit text)
+# automatically pushes to github (but you must provide commit text, unless you dont want to)
 
 def main():
 	print("****** AUTOGIT ******\n")
