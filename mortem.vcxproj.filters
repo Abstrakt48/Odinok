@@ -18,7 +18,7 @@
     <ClCompile Include="mortem\engine\sys.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mortem\game\gm_main.cpp">
+    <ClCompile Include="mortem\game\game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="mortem\launcher\linux\linuxApplication.cpp">
@@ -38,10 +38,10 @@
     <ClInclude Include="mortem\engine\types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mortem\engine\mortemdef.h">
+    <ClInclude Include="mortem\game\mortemdef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mortem\game\gm_local.h">
+    <ClInclude Include="mortem\game\game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mortem\launcher\linux\linuxApplication.h">

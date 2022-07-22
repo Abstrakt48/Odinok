@@ -154,16 +154,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mortem\engine\sys.cpp" />
-    <ClCompile Include="mortem\game\gm_main.cpp" />
+    <ClCompile Include="mortem\game\game.cpp" />
     <ClCompile Include="mortem\launcher\launcher.cpp" />
     <ClCompile Include="mortem\launcher\linux\linuxApplication.cpp" />
     <ClCompile Include="mortem\launcher\win\winApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mortem\engine\mortemdef.h" />
+    <ClInclude Include="mortem\game\mortemdef.h" />
     <ClInclude Include="mortem\engine\sys.h" />
     <ClInclude Include="mortem\engine\types.h" />
-    <ClInclude Include="mortem\game\gm_local.h" />
+    <ClInclude Include="mortem\game\game.h" />
     <ClInclude Include="mortem\launcher\linux\linuxApplication.h" />
     <ClInclude Include="mortem\launcher\win\winApplication.h" />
     <ClInclude Include="mortem\mathlib\vector.h" />
