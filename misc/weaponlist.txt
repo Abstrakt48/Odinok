@@ -1,0 +1,11 @@
+Weapons and ammunition types
+
+PISTOLS:
+Tokarev TT-33 			| 8-round magazine 		| semi-automatic 	| 7.62×25mm Tokarev 	| pistol
+
+RIFLES:
+Tokarev SVT-40 			| 10-round magazine 	| semi-automatic 	| 7.62×54mmR			| rifle
+Avtomat Kalashnikova 	| 10-round magazine		| select-fire 		| 7.62×39mm 			| rifle
+
+SHOTGUNS:
+TOZ-87					| 4-round capacity 		| semi-automatic 	| 12 bore 				| shotgun
