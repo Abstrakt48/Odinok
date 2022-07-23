@@ -43,13 +43,13 @@ void Sys_Error(const char *error, ...)
 
 //-----------------------------------------------------------------------------
 // Purpose: Exit engine
-// Input  : eType - 
+// Input  : _ecode - 
 //			... - 
 // Output : void Sys_Exit
 //-----------------------------------------------------------------------------
-void Sys_Exit( EXITYPE eType )
+void Sys_Exit( int _ecode )
 {
-	exit((int)eType);
+	exit((int)_ecode); // cast to int, in case param not input as int
 }
 
 //-----------------------------------------------------------------------------

@@ -18,5 +18,7 @@ int main(int argc, char** argv)
 	CLinuxApplication app(argc, argv);
 #endif
 
-	return app.Run();
+	app.Run();
+
+	return 0; // technically useless, app.Run will exit itself
 }

@@ -13,7 +13,7 @@ CWinApplication::CWinApplication(const char* cmdline)
 
 CWinApplication::~CWinApplication() = default;
 
-int CWinApplication::Run()
+void CWinApplication::Run()
 {
 	// initialize game first
 	Init();
@@ -22,7 +22,6 @@ int CWinApplication::Run()
 	if (!mPostInit)
 	{
 		Sys_Error("mPostInit not set to true\n");
-		return Failure;
 	}
 
 	Sys_Printf("Working\n");
@@ -31,9 +30,6 @@ int CWinApplication::Run()
 	GM_MortemMain();
 
 	Shutdown();
-
-	// for clarity sake
-	return Success;
 };
 
 void CWinApplication::Init()
@@ -41,12 +37,12 @@ void CWinApplication::Init()
 	Sys_Printf("Initializing...\n");
 
 	GM_MortemInit();
-	Sys_Printf("winApplication initialized\n");
+	Sys_Printf("linuxApplication initialized\n");
 
-	mPostInit = true;
+	mPostInit = mTrue;
 };
 
 void CWinApplication::Shutdown()
 {
-	Sys_Exit(et_normal);
+	Sys_Exit(0);
 };

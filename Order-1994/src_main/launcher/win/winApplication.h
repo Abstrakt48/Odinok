@@ -10,7 +10,7 @@ public:
 	CWinApplication(const char* cmdline);
 	~CWinApplication();
 
-	int Run();
+	void Run();
 
 	void Init();
 	void Shutdown();

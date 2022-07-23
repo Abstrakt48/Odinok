@@ -6,7 +6,7 @@ public:
 	CLinuxApplication(int argc, char** argv);
 	~CLinuxApplication();
 
-	int Run();
+	void Run();
 
 	void Init();
 	void Shutdown();

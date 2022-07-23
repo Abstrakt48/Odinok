@@ -11,7 +11,7 @@ CLinuxApplication::CLinuxApplication(int argc, char** argv)
 
 CLinuxApplication::~CLinuxApplication() = default;
 
-int CLinuxApplication::Run()
+void CLinuxApplication::Run()
 {
 	// initialize game first
 	Init();
@@ -20,7 +20,6 @@ int CLinuxApplication::Run()
 	if (!mPostInit)
 	{
 		Sys_Error("mPostInit not set to true\n");
-		return EXIT_FAILURE;
 	}
 
 	Sys_Printf("Working\n");
@@ -43,5 +42,5 @@ void CLinuxApplication::Init()
 
 void CLinuxApplication::Shutdown()
 {
-	Sys_Exit(et_normal);
+	Sys_Exit(0);
 };
