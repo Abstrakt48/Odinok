@@ -1,7 +1,9 @@
 #include "linuxApplication.h"
 #include "engine/sys.h"
+#include "tier0/basetypes.h"
 #include "game/game.h"
-#include "common/types.h"
+
+#include <cstdlib>
 
 CLinuxApplication::CLinuxApplication(int argc, char** argv)
 {

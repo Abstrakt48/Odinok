@@ -7,10 +7,3 @@ Feel free to do whatever you want to the game files though (good fun to be had)
 -----------------------------------
 			MODDING
 -----------------------------------
-FOLDERS:
-common - common files shared across other files
-debug - debugging purposes, not very important
-engine - yk, engine code
-filesystem - interaction code with the file system
-game - pretty obvious?
-gameui - user interface for the game

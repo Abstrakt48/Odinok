@@ -7,19 +7,17 @@ CFLAGS = -ggdb -O3
 LIBS = -lm -lGL -lGLU -lglfw
 
 SRC_DIRS=\
-mortem/engine/*.cpp \
-mortem/game/*.cpp \
-mortem/launcher/*.cpp \
-mortem/launcher/linux/*.cpp \
-mortem/common/*.cpp \
-mortem/mathlib/*.cpp
+mortem/ce2022/engine/*.cpp \
+mortem/src_main/game/*.cpp \
+mortem/src_main/launcher/*.cpp \
+mortem/src_main/launcher/linux/*.cpp \
 
-INCLUDE_DIRS=mortem/
+INCLUDE_DIRS=-I mortem/src_main -I mortem/ce2022
 
 BUILD_FILE = build/Mortem
 
 build_game:
-	${CC} ${CFLAGS} ${SRC_DIRS} -I ${INCLUDE_DIRS} -o ${BUILD_FILE} ${LIBS}
+	${CC} ${CFLAGS} ${SRC_DIRS} ${INCLUDE_DIRS} -o ${BUILD_FILE} ${LIBS}
 
 run_game:
 	./${BUILD_FILE}

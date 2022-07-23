@@ -4,5 +4,4 @@ Fists		Infinite ammo 		10 dmg
 Pistol 		9mm 				15 dmg
 Uzi			9mm 				5 dmg (fast fire rate makes up for low damage)
 AK-47		7.62x39mm 			10 dmg
-AR-15 		5.56x45mm 			12.5 dmg
 Hairspray	Hairspray can		15 dmg (done over time, flame damage)
