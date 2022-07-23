@@ -14,7 +14,7 @@ def main():
 		commit_text = input("commit text -> ")
 
 		print(f"git commit -m '{commit_text}'")
-		os.system(f"git commit -m '{commit_text}'")
+		os.system(f"git commit -m \"{commit_text}\"")
 		print("git push")
 		os.system("git push")
 	else:
