@@ -25,7 +25,7 @@ void CLinuxApplication::Run()
 	Sys_Printf("Working\n");
 	Sys_Printf("Attempting to boot game...\n");
 
-	GM_MortemMain();
+	GM_OrderMain();
 
 	Shutdown();
 };
@@ -34,7 +34,7 @@ void CLinuxApplication::Init()
 {
 	Sys_Printf("Initializing...\n");
 
-	GM_MortemInit();
+	GM_OrderInit();
 	Sys_Printf("linuxApplication initialized\n");
 
 	mPostInit = mTrue;

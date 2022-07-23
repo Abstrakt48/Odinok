@@ -5,6 +5,10 @@
 #include <stdlib.h>
 #include <string>
 
+#ifdef _WIN32
+#include <Windows.h>
+#endif
+
 //-----------------------------------------------------------------------------
 // Purpose: Print to system console
 // Input  : *fmt 

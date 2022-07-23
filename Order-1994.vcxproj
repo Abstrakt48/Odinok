@@ -22,8 +22,9 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{9e062fd5-97dc-4a2d-8940-31a0c0a26f11}</ProjectGuid>
-    <RootNamespace>mortem</RootNamespace>
+    <RootNamespace>Order-1994</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Order-1994</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -71,11 +72,11 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir)mortem;C:\Users\james\Documents\programming\c++\mortem;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)Order-1994\ce2022;$(ProjectDir)\Order-1994\src_main;C:\Users\james\Documents\programming\c++\Order-1994;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)x64\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir)mortem;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(ProjectDir)Order-1994\ce2022;$(ProjectDir)\Order-1994\src_main;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <OutDir>$(SolutionDir)x64\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -153,20 +154,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="mortem\engine\sys.cpp" />
-    <ClCompile Include="mortem\game\game.cpp" />
-    <ClCompile Include="mortem\launcher\launcher.cpp" />
-    <ClCompile Include="mortem\launcher\linux\linuxApplication.cpp" />
-    <ClCompile Include="mortem\launcher\win\winApplication.cpp" />
+    <ClCompile Include="Order-1994\src_main\game\game.cpp" />
+    <ClCompile Include="Order-1994\src_main\launcher\launcher.cpp" />
+    <ClCompile Include="Order-1994\src_main\launcher\linux\linuxApplication.cpp" />
+    <ClCompile Include="Order-1994\src_main\launcher\win\winApplication.cpp" />
+	<ClCompile Include="Order-1994\ce2022\engine\sys.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mortem\game\mortemdef.h" />
-    <ClInclude Include="mortem\engine\sys.h" />
-    <ClInclude Include="mortem\engine\types.h" />
-    <ClInclude Include="mortem\game\game.h" />
-    <ClInclude Include="mortem\launcher\linux\linuxApplication.h" />
-    <ClInclude Include="mortem\launcher\win\winApplication.h" />
-    <ClInclude Include="mortem\mathlib\vector.h" />
+    <ClInclude Include="Order-1994\src_main\game\orderdef.h" />
+    <ClInclude Include="Order-1994\src_main\game\game.h" />
+    <ClInclude Include="Order-1994\src_main\launcher\linux\linuxApplication.h" />
+    <ClInclude Include="Order-1994\src_main\launcher\win\winApplication.h" />
+    <ClInclude Include="Order-1994\ce2022\tier0\basetypes.h" />
+	<ClInclude Include="Order-1994\ce2022\engine\sys.h" />
+	<ClInclude Include="Order-1994\ce2022\filesystem\basefilesystem.h" />
+	<ClInclude Include="Order-1994\ce2022\public\color.h" />
+	<ClInclude Include="Order-1994\ce2022\public\string_t.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="misc\credits.txt" />

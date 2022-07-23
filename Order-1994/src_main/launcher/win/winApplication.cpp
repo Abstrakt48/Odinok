@@ -1,7 +1,7 @@
 #include "winApplication.h"
 #include "engine/sys.h"
 #include "game/game.h"
-#include "common/types.h"
+#include "tier0/basetypes.h"
 
 CWinApplication::CWinApplication(const char* cmdline)
 {
@@ -27,7 +27,7 @@ void CWinApplication::Run()
 	Sys_Printf("Working\n");
 	Sys_Printf("Attempting to boot game...\n");
 
-	GM_MortemMain();
+	GM_OrderMain();
 
 	Shutdown();
 };
@@ -36,7 +36,7 @@ void CWinApplication::Init()
 {
 	Sys_Printf("Initializing...\n");
 
-	GM_MortemInit();
+	GM_OrderInit();
 	Sys_Printf("linuxApplication initialized\n");
 
 	mPostInit = mTrue;

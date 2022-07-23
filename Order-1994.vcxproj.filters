@@ -15,42 +15,48 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mortem\engine\sys.cpp">
+    <ClCompile Include="Order-1994\src_main\game\game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mortem\game\game.cpp">
+    <ClCompile Include="Order-1994\src_main\launcher\linux\linuxApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mortem\launcher\linux\linuxApplication.cpp">
+    <ClCompile Include="Order-1994\src_main\launcher\win\winApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mortem\launcher\win\winApplication.cpp">
+    <ClCompile Include="Order-1994\src_main\launcher\launcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mortem\launcher\launcher.cpp">
+	<ClCompile Include="Order-1994\ce2022\engine\sys.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mortem\engine\sys.h">
+    <ClInclude Include="Order-1994\src_main\game\orderdef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mortem\engine\types.h">
+    <ClInclude Include="Order-1994\src_main\game\game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mortem\game\mortemdef.h">
+    <ClInclude Include="Order-1994\src_main\launcher\linux\linuxApplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mortem\game\game.h">
+    <ClInclude Include="Order-1994\src_main\launcher\win\winApplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mortem\launcher\linux\linuxApplication.h">
+    <ClInclude Include="Order-1994\ce2022\tier0\basetypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mortem\launcher\win\winApplication.h">
+	<ClInclude Include="Order-1994\ce2022\engine\sys.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mortem\mathlib\vector.h">
+	<ClInclude Include="Order-1994\ce2022\filesystem\basefilesystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+	<ClInclude Include="Order-1994\ce2022\public\color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+	<ClInclude Include="Order-1994\ce2022\public\string_t.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

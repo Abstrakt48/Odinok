@@ -1,7 +1,7 @@
 #pragma once
 
 // Game initialization method
-int GM_MortemInit( void );
+int GM_OrderInit( void );
 
 // Main game method
-void GM_MortemMain( void );
+void GM_OrderMain( void );
