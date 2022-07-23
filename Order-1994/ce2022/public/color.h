@@ -1,6 +1,8 @@
 #ifndef __COLOR__
 #define __COLOR__
 
+#include "tier0/basetypes.h"
+
 class Color
 {
 public:
@@ -25,10 +27,10 @@ public:
 	// a - alpha component, controls transparency (0 - transparent, 255 - opaque);
 	void SetColor(int r, int g, int b, int a = 0)
 	{
-		_color[0] = (unsigned char)r;
-		_color[1] = (unsigned char)g;
-		_color[2] = (unsigned char)b;
-		_color[3] = (unsigned char)a;
+		_color[0] = (byte)r;
+		_color[1] = (byte)g;
+		_color[2] = (byte)b;
+		_color[3] = (byte)a;
 	}
 
 	void GetColor(int &r, int &g, int &b, int &a) const
@@ -81,7 +83,7 @@ public:
 	}
 
 private:
-	unsigned char _color[4];
+	byte _color[4];
 };
 
 #endif
