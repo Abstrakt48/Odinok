@@ -4,9 +4,9 @@
 #include "public/color.h"
 #include "engine/sys.h"
 
+#include "tier0/basetypes.h"
+
 #include <stdlib.h>
-#include <stdio.h>
-#include <tuple>
 
 int GM_OrderInit(void)
 {

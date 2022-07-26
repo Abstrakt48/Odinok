@@ -13,5 +13,5 @@ public:
 	void Init();
 	void Shutdown();
 private:
-	mboolean mPostInit = mFalse;
+	mboolean m_postInit = mFalse;
 };

@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <string>
 
+#include <unistd.h>
+
 #ifdef _WIN32
 #include <Windows.h>
 #endif
@@ -65,7 +67,7 @@ void Sys_Sleep( int msec )
 {
 #ifdef _WIN32
 	Sleep ( msec );
-#elif _LINUX
+#else
 	usleep( msec );
 #endif
 }

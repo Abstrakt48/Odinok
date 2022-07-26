@@ -17,7 +17,7 @@ void CLinuxApplication::Run()
 	Init();
 
 	// if code in init function fails, exit with a failure code (1)
-	if (!mPostInit)
+	if (!m_postInit)
 	{
 		Sys_Error("mPostInit not set to true\n");
 	}
@@ -37,7 +37,7 @@ void CLinuxApplication::Init()
 	GM_OrderInit();
 	Sys_Printf("linuxApplication initialized\n");
 
-	mPostInit = mTrue;
+	m_postInit = mTrue;
 };
 
 void CLinuxApplication::Shutdown()

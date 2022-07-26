@@ -5,6 +5,10 @@
 #define NULL 0
 #endif
 
+#define uFullSecond 	1000000 // Used for usleep, one full second is 1000000 useconds.
+								// To get more than one second in a sleep func, multiply
+								// by number of seconds (can be float or int).
+
 #define M_PI			3.14159265358979323846
 
 #ifndef min
