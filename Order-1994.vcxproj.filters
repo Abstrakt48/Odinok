@@ -27,7 +27,16 @@
     <ClCompile Include="Order-1994\src_main\launcher\launcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-	<ClCompile Include="Order-1994\ce2022\engine\sys.cpp">
+    <ClCompile Include="Order-1994\src_main\engine\sys.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Order-1994\src_main\renderer\r_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Order-1994\src_main\renderer\r_light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Order-1994\src_main\tools\mathlib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,19 +53,22 @@
     <ClInclude Include="Order-1994\src_main\launcher\win\winApplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Order-1994\ce2022\tier0\basetypes.h">
+    <ClInclude Include="Order-1994\src_main\tools\basetypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-	<ClInclude Include="Order-1994\ce2022\engine\sys.h">
+    <ClInclude Include="Order-1994\src_main\engine\sys.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-	<ClInclude Include="Order-1994\ce2022\filesystem\basefilesystem.h">
+    <ClInclude Include="Order-1994\src_main\filesystem\basefilesystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-	<ClInclude Include="Order-1994\ce2022\public\color.h">
+    <ClInclude Include="Order-1994\src_main\public\string_t.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-	<ClInclude Include="Order-1994\ce2022\public\string_t.h">
+    <ClInclude Include="Order-1994\src_main\renderer\r_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Order-1994\src_main\tools\mathlib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

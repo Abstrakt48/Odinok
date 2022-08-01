@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "tier0/basetypes.h"
+#include "tools/basetypes.h"
 
 class CWinApplication
 {
@@ -17,7 +17,7 @@ public:
 	void Init();
 	void Shutdown();
 private:
-	mboolean mPostInit = mFalse;
+	oboolean mPostInit = ofalse;
 protected:
 	char msCmdLine[512]{};
 };

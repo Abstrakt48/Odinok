@@ -1,7 +1,7 @@
 #ifndef __STRING_T__
 #define __STRING_T__
 
-#include "tier0/basetypes.h"
+#include "tools/basetypes.h"
 
 #include <stdarg.h>
 

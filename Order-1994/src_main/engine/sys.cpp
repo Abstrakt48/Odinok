@@ -5,7 +5,9 @@
 #include <stdlib.h>
 #include <string>
 
+#ifdef __linux__
 #include <unistd.h>
+#endif
 
 #ifdef _WIN32
 #include <Windows.h>

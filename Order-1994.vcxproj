@@ -158,18 +158,22 @@
     <ClCompile Include="Order-1994\src_main\launcher\launcher.cpp" />
     <ClCompile Include="Order-1994\src_main\launcher\linux\linuxApplication.cpp" />
     <ClCompile Include="Order-1994\src_main\launcher\win\winApplication.cpp" />
-	<ClCompile Include="Order-1994\ce2022\engine\sys.cpp" />
+    <ClCompile Include="Order-1994\src_main\engine\sys.cpp" />
+    <ClCompile Include="Order-1994\src_main\renderer\r_light.cpp" />
+    <ClCompile Include="Order-1994\src_main\renderer\r_image.cpp" />
+    <ClCompile Include="Order-1994\src_main\tools\mathlib.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Order-1994\src_main\renderer\r_local.h" />
     <ClInclude Include="Order-1994\src_main\game\orderdef.h" />
     <ClInclude Include="Order-1994\src_main\game\game.h" />
     <ClInclude Include="Order-1994\src_main\launcher\linux\linuxApplication.h" />
     <ClInclude Include="Order-1994\src_main\launcher\win\winApplication.h" />
-    <ClInclude Include="Order-1994\ce2022\tier0\basetypes.h" />
-	<ClInclude Include="Order-1994\ce2022\engine\sys.h" />
-	<ClInclude Include="Order-1994\ce2022\filesystem\basefilesystem.h" />
-	<ClInclude Include="Order-1994\ce2022\public\color.h" />
-	<ClInclude Include="Order-1994\ce2022\public\string_t.h" />
+    <ClInclude Include="Order-1994\src_main\tools\basetypes.h" />
+    <ClInclude Include="Order-1994\src_main\engine\sys.h" />
+    <ClInclude Include="Order-1994\src_main\filesystem\basefilesystem.h" />
+    <ClInclude Include="Order-1994\src_main\public\string_t.h" />
+    <ClInclude Include="Order-1994\src_main\tools\mathlib.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="misc\credits.txt" />

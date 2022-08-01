@@ -1,6 +1,6 @@
 #pragma once
 
-#include "tier0/basetypes.h"
+#include "tools/basetypes.h"
 
 class CLinuxApplication
 {
@@ -13,5 +13,5 @@ public:
 	void Init();
 	void Shutdown();
 private:
-	mboolean m_postInit = mFalse;
+	oboolean m_postInit = ofalse;
 };

@@ -7,3 +7,6 @@ Feel free to do whatever you want to the game files though (good fun to be had)
 -----------------------------------
 			MODDING
 -----------------------------------
+Do not change the value of DEVELOPER_MODE define, in orderdef.h, to 999 unless 
+you know what you are doing and have changed SRC_DIR to be local with your
+machine.

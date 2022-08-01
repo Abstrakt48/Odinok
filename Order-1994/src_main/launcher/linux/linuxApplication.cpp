@@ -1,6 +1,6 @@
 #include "linuxApplication.h"
 #include "engine/sys.h"
-#include "tier0/basetypes.h"
+#include "tools/basetypes.h"
 #include "game/game.h"
 
 #include <cstdlib>
@@ -37,7 +37,7 @@ void CLinuxApplication::Init()
 	GM_OrderInit();
 	Sys_Printf("linuxApplication initialized\n");
 
-	m_postInit = mTrue;
+	m_postInit = otrue;
 };
 
 void CLinuxApplication::Shutdown()

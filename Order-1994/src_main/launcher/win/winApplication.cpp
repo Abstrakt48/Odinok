@@ -1,7 +1,7 @@
 #include "winApplication.h"
 #include "engine/sys.h"
 #include "game/game.h"
-#include "tier0/basetypes.h"
+#include "tools/basetypes.h"
 
 CWinApplication::CWinApplication(const char* cmdline)
 {
@@ -39,7 +39,7 @@ void CWinApplication::Init()
 	GM_OrderInit();
 	Sys_Printf("linuxApplication initialized\n");
 
-	mPostInit = mTrue;
+	mPostInit = otrue;
 };
 
 void CWinApplication::Shutdown()
