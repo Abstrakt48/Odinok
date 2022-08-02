@@ -9,17 +9,18 @@
 #define VERSION_NUM 0.04
 
 #ifdef _WIN32
-#define DEVELOPER_MODE 999		// 0 = no, 1 = yes but on the machine running the game, 999 = yes but on developers machine
+	#define DEVELOPER_MODE 999		// 0 = no, 1 = yes but on the machine running the game
+									// 999 = yes but on developers machine
 #else __linux__
-#define DEVELOPER_MODE 999
+	#define DEVELOPER_MODE 999
 #endif
 
 #if DEVELOPER_MODE == 999 // if is running on dev machine, if you are modding this, 
-#ifdef _WIN32
-#define SRC_DIR		"" // directory for source code
-#else __linux__
-#define SRC_DIR		""
-#endif
+	#ifdef _WIN32
+		#define SRC_DIR		"" // directory for source code
+	#else __linux__
+		#define SRC_DIR		"/home/yesko/Programming/C++/Order-1994"
+	#endif
 #endif
 
 #define GAME_DIR	"" // directory where the executable is
