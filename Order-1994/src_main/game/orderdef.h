@@ -15,11 +15,11 @@
 	#define DEVELOPER_MODE 999
 #endif
 
-#if DEVELOPER_MODE == 999 // if is running on dev machine, if you are modding this, 
+#if DEVELOPER_MODE == 999 // if is running on dev machine
 	#ifdef _WIN32
 		#define SRC_DIR		"" // directory for source code
 	#else __linux__
-		#define SRC_DIR		"/home/yesko/Programming/C++/Order-1994"
+		#define SRC_DIR		""
 	#endif
 #endif
 

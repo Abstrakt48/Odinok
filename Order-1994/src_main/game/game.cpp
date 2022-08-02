@@ -5,7 +5,8 @@
 
 #include "tools/basetypes.h"
 
-#include "renderer/render.h"
+#include "renderer/r_local.h"
+#include "tools/mathlib.h"
 
 #include <stdlib.h>
 
@@ -21,15 +22,22 @@ void GM_OrderMain(void)
 
 	vec3_t dlightOrg;
 	vec3_t dlightCol;
-	VectorCreate(dlightOrg, 0, 10, 0);
-	VectorCreate(dlightCol, 100, 10, 0);
+	Vector3Create(dlightOrg, 0, 10, 0); // placed 10 ingame coords above world origin
+	Vector3Create(dlightCol, 100, 10, 0);
 
 	DynamicLight dlight;
 	dlight.R_CreateDynamicLight(dlightOrg, dlightCol, 30.f);
 
-	for(int i = 0; i < sizeof(dlight.origin)/sizeof(dlight.origin[0]); i++)
+	for (int i = 0; i < sizeof(dlight.origin) / sizeof(dlight.origin[0]); i++)
+	{
 		Sys_Printf("%f ", dlight.origin[i]);
-	Sys_Printf("\n")
+	}
+	Sys_Printf("\n");
+	for (int i = 0; i < sizeof(dlight.origin) / sizeof(dlight.origin[0]); i++)
+	{
+		Sys_Printf("%f ", dlight.color[i]);
+	}
+	Sys_Printf("\n");
 
 	Sys_Exit(0);
 };
