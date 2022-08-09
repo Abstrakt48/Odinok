@@ -1,0 +1,17 @@
+pretty much, raw map files will look like this:
+
+map # map is a built in type
+{
+	name:"map_basic" # name is a string
+	size:20 20 # size is a vec2, values seperated by a space
+
+	objects
+	{
+		obj_building
+		{
+			position:7.5 1.5 10 # for all objects, origin is in the center by default, you can change this by declaring the origin var
+			rotation:0 0 90
+			scale:15 3 10
+		}
+	}
+}

@@ -180,6 +180,7 @@
     <ClInclude Include="Odinok\src_main\tools\soundclip.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="game\bin\mappingsyntaxplans.txt" />
     <Text Include="misc\credits.txt" />
     <Text Include="Odinok\src_main\game\scripts\scripting.txt" />
   </ItemGroup>
