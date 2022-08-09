@@ -7,16 +7,16 @@ CFLAGS = -ggdb -O3
 LIBS = -lm -lGL -lGLU -lglfw
 
 SRC_DIRS=\
-Order-1994/src_main/engine/*.cpp \
-Order-1994/src_main/game/*.cpp \
-Order-1994/src_main/launcher/*.cpp \
-Order-1994/src_main/launcher/linux/*.cpp \
-Order-1994/src_main/renderer/*.cpp \
-Order-1994/src_main/tools/*.cpp \
+Odinok/src_main/system/*.cpp \
+Odinok/src_main/game/*.cpp \
+Odinok/src_main/launcher/*.cpp \
+Odinok/src_main/launcher/linux/*.cpp \
+Odinok/src_main/renderer/*.cpp \
+Odinok/src_main/tools/*.cpp \
 
-INCLUDE_DIRS=-I Order-1994/src_main
+INCLUDE_DIRS=-I Odinok/src_main
 
-BUILD_FILE = build/Order-1994
+BUILD_FILE = build/Odinok
 
 build_game:
 	${CC} ${CFLAGS} ${SRC_DIRS} ${INCLUDE_DIRS} -o ${BUILD_FILE} ${LIBS}
