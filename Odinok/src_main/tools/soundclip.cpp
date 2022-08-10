@@ -1,5 +1,6 @@
 #include "soundclip.h"
-#include "mathlib.h"
+#include "mathlib/mathlib.h"
+#include "mathlib/vector.h"
 
 void SoundClip::CreateSoundClip(const char* path, float vol, bool loop)
 {
@@ -19,7 +20,7 @@ void SoundClip::SetLoop(bool newLoop)
 	SoundClip::m_sndLoop = newLoop;
 }
 
-void DynamicSoundClip::CreateDynamicSoundClip(const char* path, float vol, float rad, vec3_t pos, bool loop)
+void DynamicSoundClip::CreateDynamicSoundClip(const char* path, float vol, float rad, Vector3D pos, bool loop)
 {
 	DynamicSoundClip::m_sndPath = path;
 	DynamicSoundClip::m_sndVolume = vol;
@@ -27,7 +28,7 @@ void DynamicSoundClip::CreateDynamicSoundClip(const char* path, float vol, float
 
 	DynamicSoundClip::m_sndLoop = loop;
 	
-	Vector3Copy(pos, DynamicSoundClip::m_sndPosition);
+	DynamicSoundClip::m_sndPosition = pos;
 }
 
 void DynamicSoundClip::SetVolume(float newVol)
@@ -40,9 +41,9 @@ void DynamicSoundClip::SetRadius(float newRad)
 	DynamicSoundClip::m_sndRadius = newRad;
 }
 
-void DynamicSoundClip::SetPosition(vec3_t newPos)
+void DynamicSoundClip::SetPosition(Vector3D newPos)
 {
-	Vector3Copy(newPos, DynamicSoundClip::m_sndPosition);
+	DynamicSoundClip::m_sndPosition = newPos;
 }
 
 void DynamicSoundClip::SetLoop(bool newLoop)

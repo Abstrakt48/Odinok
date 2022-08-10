@@ -1,24 +1,26 @@
 #include "game.h"
-#include "odindef.h"
-#include "tools/string_t.h"
 #include "system/system.h"
-
-#include "tools/basetypes.h"
-
-#include "renderer/render.h"
-#include "tools/mathlib.h"
-
-#include <stdlib.h>
-
-int GM_OrderInit(void)
+	
+void Game::run()
 {
-	// init code here
-	return EXIT_SUCCESS;
-};
+	isRunning = true;
 
-void GM_OrderMain(void)
+	onCreate();
+
+	isInit = true;
+
+	while(isRunning)
+	{
+		onUpdate();
+	}
+
+	onQuit();
+}
+
+void Game::quit()
 {
-	Sys_Printf("\n********** %s V%s *********\n", GAME, VERSION);
+	onQuit();
 
+	isRunning = false;
 	Sys_Exit(0);
-};
+}

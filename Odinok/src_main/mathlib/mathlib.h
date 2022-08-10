@@ -3,7 +3,7 @@
 
 #include <math.h>
 
-#include "basetypes.h"
+#include "tools/basetypes.h"
 
 typedef float vec_t;
 
@@ -27,6 +27,13 @@ typedef vec_t vec4_t[4];
 #define	PLANE_Z			2
 #define	PLANE_NON_AXIAL	3
 
+typedef enum
+{
+	axis_x,
+	axis_y,
+	axis_z,
+} axis_t;
+
 oboolean VectorCompare(const vec3_t v1, const vec3_t v2);
 
 #define DotProduct(x,y) (x[0]*y[0]+x[1]*y[1]+x[2]*y[2])
@@ -37,18 +44,10 @@ oboolean VectorCompare(const vec3_t v1, const vec3_t v2);
 #define VectorClear(x) {x[0] = x[1] = x[2] = 0;}
 #define	VectorNegate(x) {x[0]=-x[0];x[1]=-x[1];x[2]=-x[2];}
 
-// Creates a 2D Vector from given parameters
-void Vector2Create(vec2_t vec, vec_t x, vec_t y);
-// Creates a 3D Vector from given parameters
-void Vector3Create(vec3_t vec, vec_t x, vec_t y, vec_t z);
-// Creates a 4D Vector from given parameters
-void Vector4Create(vec4_t vec, vec_t x, vec_t y, vec_t z, vec_t w);
+float rlengthdir_x(float length, float angle);
+float rlengthdir_y(float length, float angle);
 
-// Copies the first vector into the second vector
-void Vector2Copy(vec2_t a, vec2_t b);
-// Copies the first vector into the second vector
-void Vector3Copy(vec3_t a, vec3_t b);
-// Copies the first vector into the second vector
-void Vector4Copy(vec4_t a, vec4_t b);
+float dlengthdir_x(float length, float angle);
+float dlengthdir_y(float length, float angle);
 
 #endif

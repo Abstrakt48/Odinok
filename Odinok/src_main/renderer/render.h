@@ -1,30 +1,25 @@
 #ifndef __RENDER__
 #define __RENDER__
 
-#include "tools/mathlib.h"
+#include "mathlib/mathlib.h"
 #include "tools/basetypes.h"
-
-typedef enum {
-	img_clampToEdge,
-	img_repeat
-} imageRenderMode_t;
+#include "mathlib/vector.h"
 
 //
 // For game images (textures and stuff)
 //
 class Image
 {
-private:
-	const char *	imgName;					// game path, including extension
-	vec2_t			dimensions;
-
-	int				frameUsed;					// for texture usage in frame statistics
-
-	oboolean		mipmap;
-	imageRenderMode_t	renderMode;
 public:
-	void R_CreateImage(const char *img, vec2_t dimensions, int frameUsed,
-		oboolean mipmap, imageRenderMode_t renderMode);
+	const char *		imgName;					// game path, including extension
+	Vector2D			dimensions;
+
+	int					frameUsed;					// for texture usage in frame statistics
+
+	oboolean			mipmap;
+public:
+	void R_CreateImage(const char *img, Vector2D dimensions, int frameUsed,
+		oboolean mipmap);
 };
 
 //
@@ -33,13 +28,13 @@ public:
 class DynamicLight
 {
 public:
-	vec3_t	origin;
-	vec3_t	color;				// range from 0.0 to 1.0, should be color normalized
+	Vector3D	origin;
+	Vector3D	color;				// range from 0.0 to 1.0, should be color normalized
 	float	radius;
 public:
-	void R_CreateDynamicLight(vec3_t origin, vec3_t color, float radius);
-	void R_SetDynamicLightOrigin(vec3_t newOrigin);
-	void R_SetDynamicLightColor(vec3_t newColor);
+	void R_CreateDynamicLight(Vector3D origin, Vector3D color, float radius);
+	void R_SetDynamicLightOrigin(Vector3D newOrigin);
+	void R_SetDynamicLightColor(Vector3D newColor);
 	void R_SetDynamicLightRadius(float newRadius);
 };
 
@@ -50,13 +45,13 @@ typedef struct
 
 typedef struct 
 {
-	vec3_t	color;
+	Vector3D	color;
 	float	depthForOpaque;
 } fogParams_t;
 
 typedef struct 
 {
-	vec3_t		bounds[2];
+	Vector3D		bounds[2];
 
 	unsigned	colorInt;				// in packed byte format
 	fogParams_t	params;

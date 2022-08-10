@@ -1,7 +1,8 @@
 #ifndef __SOUNDCLIP__
 #define __SOUNDCLIP__
 
-#include "mathlib.h"
+#include "mathlib/mathlib.h"
+#include "mathlib/vector.h"
 
 //
 // SoundClip
@@ -31,18 +32,18 @@ class DynamicSoundClip
 private:
 	float m_sndVolume; // max of 100.0f
 	float m_sndRadius; // radius of where the sound can reach in game coords
-	vec3_t m_sndPosition;
+	Vector3D m_sndPosition;
 	const char* m_sndPath;
 
 	bool m_sndLoop;
 
 public:
 	// initialization
-	void CreateDynamicSoundClip(const char* path, float vol, float rad, vec3_t pos, bool loop);
+	void CreateDynamicSoundClip(const char* path, float vol, float rad, Vector3D pos, bool loop);
 
 	void SetVolume(float newVol);
 	void SetRadius(float newRad);
-	void SetPosition(vec3_t newPos);
+	void SetPosition(Vector3D newPos);
 
 	void SetLoop(bool newLoop);
 };

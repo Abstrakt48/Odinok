@@ -1,15 +1,16 @@
 #include "render.h"
-#include "tools/mathlib.h"
+#include "mathlib/mathlib.h"
+#include "mathlib/vector.h"
 
-void Image::R_CreateImage(const char* img, vec2_t dimensions, int frameUsed, 
-	oboolean mipmap, imageRenderMode_t renderMode)
+void Image::R_CreateImage(const char* img, Vector2D dimensions, int frameUsed, 
+	oboolean mipmap)
 {
 	Image::imgName = img;
 
 	Image::frameUsed = frameUsed;
 
 	Image::mipmap = mipmap;
-	Image::renderMode = renderMode;
 
-	Vector2Copy(Image::dimensions, dimensions);
+	Image::dimensions.x = dimensions.x;
+	Image::dimensions.y = dimensions.y;
 }

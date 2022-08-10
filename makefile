@@ -8,11 +8,11 @@ LIBS = -lm -lGL -lGLU -lglfw
 
 SRC_DIRS=\
 Odinok/src_main/system/*.cpp \
+Odinok/src_main/mathlib/*.cpp \
 Odinok/src_main/game/*.cpp \
-Odinok/src_main/launcher/*.cpp \
-Odinok/src_main/launcher/linux/*.cpp \
 Odinok/src_main/renderer/*.cpp \
 Odinok/src_main/tools/*.cpp \
+Odinok/src_main/odinok_src/*.cpp \
 
 INCLUDE_DIRS=-I Odinok/src_main
 

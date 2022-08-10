@@ -5,8 +5,8 @@
 
 #define GAME "Odinok"
 #define GAME_RUS "Одинок" // for russian conversion and stuff
-#define VERSION "0.04"
-#define VERSION_NUM 0.04
+#define VERSION "0.05"
+#define VERSION_NUM 0.05
 
 #ifdef _WIN32
 	#define DEVELOPER_MODE 999		// 0 = no, 1 = yes but on the machine running the game

@@ -1,7 +1,21 @@
-#pragma once
+#ifndef __GAME__
+#define __GAME__
 
-// Game initialization method
-int GM_OrderInit( void );
+//
+// Game
+// 
+class Game
+{
+public:
+	virtual void onCreate() {}
+	virtual void onUpdate() {}
+	virtual void onQuit() {}
+	
+	void run();
+	void quit();
+protected:
+	bool isInit;
+	bool isRunning;
+};
 
-// Main game method
-void GM_OrderMain( void );
+#endif
