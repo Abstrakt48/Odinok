@@ -18,6 +18,10 @@ public:
 
 	oboolean			mipmap;
 public:
+	Image();
+	Image(const char *img, Vector2D dimensions, int frameUsed,
+		oboolean mipmap);
+
 	void R_CreateImage(const char *img, Vector2D dimensions, int frameUsed,
 		oboolean mipmap);
 };
@@ -32,6 +36,9 @@ public:
 	Vector3D	color;				// range from 0.0 to 1.0, should be color normalized
 	float	radius;
 public:
+	DynamicLight();
+	DynamicLight(Vector3D origin, Vector3D color, float radius);
+
 	void R_CreateDynamicLight(Vector3D origin, Vector3D color, float radius);
 	void R_SetDynamicLightOrigin(Vector3D newOrigin);
 	void R_SetDynamicLightColor(Vector3D newColor);

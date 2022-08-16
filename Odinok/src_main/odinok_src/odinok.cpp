@@ -11,11 +11,9 @@
 
 #include <stdlib.h>
 
-Image newImage;
-
 void ImageTest()
 {
-	newImage.R_CreateImage(textureAssets[4], Vector2D(360,240),0,otrue);
+	Odinok::testImage.R_CreateImage(textureAssets[0], Vector2D(64,64), 0, ofalse);
 };
 
 // odinok code
@@ -30,7 +28,7 @@ void Odinok::onUpdate()
 {
 	while (isRunning)
 	{
-		Sys_Printf("Image info: %s, %f %f\n", newImage.imgName, newImage.dimensions.x, newImage.dimensions.y);
+		Sys_Printf("Image info: %s, %f %f\n", testImage.imgName, testImage.dimensions.x, testImage.dimensions.y);
 		Sys_Printf("Pausing for 3 seconds...\n");
 		Sys_Sleep(uFullSecond * 3);
 	

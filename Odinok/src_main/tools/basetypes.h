@@ -9,14 +9,6 @@
 								// To get more than one second in a sleep func, multiply
 								// by number of seconds (can be float or int).
 
-#ifndef min
-	#define min(a,b)  (((a) < (b)) ? (a) : (b))
-#endif
-
-#ifndef max
-	#define max(a,b)  (((a) > (b)) ? (a) : (b))
-#endif
-
 typedef int oboolean;
 #define otrue 1
 #define ofalse 0

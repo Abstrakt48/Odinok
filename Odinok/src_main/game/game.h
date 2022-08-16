@@ -9,6 +9,8 @@ class Game
 public:
 	virtual void onCreate() {}
 	virtual void onUpdate() {}
+
+	// No need to exit system when declaring, does it automatically
 	virtual void onQuit() {}
 	
 	void run();

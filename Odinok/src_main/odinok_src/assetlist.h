@@ -3,15 +3,16 @@
 
 const char *soundAssets[] =
 {
-	"snd_ambient00.wav",
+	"sounds/snd_ambient00.wav",
 };
 const char *textureAssets[] =
 {
-	"building_wall_tex00.png",
-	"building_window_tex00.png",
-	"building_window_tex01.png",
-	"ground_tex00.png",
-	"loading_screen00.png",
+	"textures/placeholder_tex00.png",
+	"textures/building_wall_tex00.png",
+	"textures/building_window_tex00.png",
+	"textures/building_window_tex01.png",
+	"textures/ground_tex00.png",
+	"textures/loading_screen00.png",
 };
 const char *mapAssets[] =
 {
